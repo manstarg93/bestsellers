@@ -1,0 +1,28 @@
+.bookListContainer {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+}
+
+.BestSellersHeader {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.booklist {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(15rem, min-content));
+  grid-auto-rows: minmax(15rem, min-content);
+
+  justify-content: center;
+}
+
+/* @media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
